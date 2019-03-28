@@ -1,12 +1,13 @@
 package com.lingbei.Test;
 
+import com.lingbei.util.JunitAnnotation;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
 public class TestRunner {
     public static void main(String[] args) {
-        Result result = JUnitCore.runClasses(TestEmployeeDetails.class);
+        Result result = JUnitCore.runClasses(JunitAnnotation.class);
         for (Failure failure : result.getFailures()){
             System.out.println(failure.toString());
         }
