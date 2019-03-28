@@ -13,6 +13,6 @@ public class TestMessageUtil {
 
    @Test
     public void testPrintMessage(){
-       assertEquals(message,messageUtil.printMeassage());
+       assertEquals(message,messageUtil.printMessage());
    }
 }
