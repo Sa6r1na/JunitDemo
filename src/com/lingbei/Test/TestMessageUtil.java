@@ -10,8 +10,8 @@ public class TestMessageUtil {
    String message = "Hello World!";
    MessageUtil messageUtil = new MessageUtil(message);
 
-
-   @Test
+//   @Test(timeout=1000)
+    @Test
     public void testPrintMessage(){
        assertEquals(message,messageUtil.printMessage());
    }
